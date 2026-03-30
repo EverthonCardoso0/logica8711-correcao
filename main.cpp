@@ -12,9 +12,10 @@ int main(){
     std::cout<<"Digite um valor para B: "<<std::endl;
     std::cin>>b;
 
-    std::cout<<(a > b)<<std::endl;
-    std::cout<<(a >= b)<<std::endl;
     std::cout<<(a != b)<<std::endl;
+    std::cout<<(a == b)<<std::endl;
+    
+    
     
     
        
