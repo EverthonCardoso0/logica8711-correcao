@@ -1,25 +1,22 @@
 #include<iostream>
-#include<string>
 
 int main(){
 
-    std::string nome;
-    int idade;
-    float altura;
+    int a;
+    int b;
+    //int a, b;
 
-    std::cout<<"Qual seu nome: "<<std::endl;
-    std::cin>>nome;
-    
-    std::cout<<"Qual sua idade: "<<std::endl;
-    std::cin>>idade;
+    std::cout<<"Digite um valor para A: "<<std::endl;
+    std::cin>>a;
 
-    std::cout<<"Qual sua altura: "<<std::endl;
-    std::cin>>altura;
+    std::cout<<"Digite um valor para B: "<<std::endl;
+    std::cin>>b;
+
+    std::cout<<(a > b)<<std::endl;
+    std::cout<<(a >= b)<<std::endl;
+    std::cout<<(a != b)<<std::endl;
     
     
-    std::cout<<"Bem-vindo(a) "<<nome<<"!!"<<std::endl;
-    std::cout<<"novinho "<<idade<<"!!"<<std::endl;
-    std::cout<<"isso? "<<altura<<"!!"<<std::endl;
        
     return 0;
 }
