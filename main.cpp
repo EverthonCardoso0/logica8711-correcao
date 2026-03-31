@@ -2,18 +2,11 @@
 
 int main(){
 
-    int a;
-    int b;
-    //int a, b;
-
-    std::cout<<"Digite um valor para A: "<<std::endl;
-    std::cin>>a;
-
-    std::cout<<"Digite um valor para B: "<<std::endl;
-    std::cin>>b;
-
-    std::cout<<(a != b)<<std::endl;
-    std::cout<<(a == b)<<std::endl;
+    int a = 8;
+    int b = 3;
+    
+    std::cout<<(a % b)<<std::endl;
+   
     
     
     
