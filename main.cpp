@@ -7,10 +7,9 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-    std::string nome = "Everthon";
+    int everthon[5] = {10,20,30,40,50};
 
-    std::cout<<"Nome tem: "<<nome.length()<<" letras."<<std::endl;
-    std::cout<<"Nome tem: "<<nome.size()<<" letras."<<std::endl;
+    std::cout<<everthon[1];
     
     return 0;
 }
