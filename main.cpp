@@ -6,9 +6,12 @@
 
 int main(){
 
-    int myNumers[5] = {10, 20, 30, 40, 50};
-    for(int num : myNumers){
-        std::cout<<num<<std::endl;
+     int myNumers[5] = {10, 20, 30, 40, 50};
+    // for(int num : myNumers){
+        //  std::cout<<num<<std::endl;
+        // }
+    for(int i = 0; i < 5; ++i){
+        std::cout<<myNumers[i]<<std::endl;
     }
     
     return 0;
