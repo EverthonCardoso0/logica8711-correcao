@@ -1,18 +1,14 @@
-#include<iostream>
+#include<iostream> 
 #include<string>
-#include<windows.h>
-#include<thread> //para lidar com o tempo de execução
-#include<chrono> //para definir unidades de tempo <ms, segundo)
 
-int main(){
+    int main(){
+        
+        std::string nomes[3] = {"João", "Paula", "Murilo"};
+        int idades[3] = {27, 31, 20};
 
-     int myNumers[5] = {10, 20, 30, 40, 50};
-    // for(int num : myNumers){
-        //  std::cout<<num<<std::endl;
-        // }
-    for(int i = 0; i < 5; ++i){
-        std::cout<<myNumers[i]<<std::endl;
-    }
+    std::cout<<nomes[1]<<" tem "<<idades[1]<<" anos!"<<std::endl;
+
+
     
     return 0;
 }
