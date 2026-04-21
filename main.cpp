@@ -1,14 +1,15 @@
 #include<iostream> 
-#include<string>
+
 
     int main(){
 
-        std::string letras[2][4] = {
-            {"A", "B", "C", "D" },
-            {"E", "F", "G", "H" }
-        };
+        int contagem = 10;
+        while(contagem > 0){
+             std::cout<<contagem<<std::endl;
+             contagem++;   
+        }
 
-        std::cout<<letras[1][3]<<std::endl;
-
+        std::cout<<"Feliz ano novo!!"<<std::endl;
+        
     return 0;
 }
