@@ -1,11 +1,17 @@
 #include<iostream> 
 
-void myFunction(){
-     std::cout<<"Olá mundo!"<<std::endl;
+void verificarAprovado(float nota){
+     if(nota >= 7){
+          std::cout<<"Status: Aprovado!"<<std::endl;
+     }else{
+          std::cout<<"Status: Reprovado!"<<std::endl;
+     }
 }
     int main(){
 
-     myFunction();
+     float minhanota = 8.5;
+
+     verificarAprovado(minhanota);
            
         return 0;
 }
