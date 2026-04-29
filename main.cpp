@@ -1,17 +1,14 @@
 #include<iostream> 
 
-void verificarAprovado(float nota){
-     if(nota >= 7){
-          std::cout<<"Status: Aprovado!"<<std::endl;
-     }else{
-          std::cout<<"Status: Reprovado!"<<std::endl;
-     }
+void minhaFuncao(std::string nome, int idade){
+     std::cout<<"Meu nome é "<<nome<<" e tenho "<<idade<<" anos."<<std::endl;
 }
+
+     
+
     int main(){
 
-     float minhanota = 8.5;
-
-     verificarAprovado(minhanota);
+        minhaFuncao("Everthon", 24);   
            
         return 0;
 }
