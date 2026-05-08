@@ -1,50 +1,61 @@
 #include<iostream> 
 #include<string>
 #include<iomanip>
-
-void exibirModalidade(){
-        std::cout<<"========== SENAC NH - MATRICULAS =========="<<std::endl;
-        std::cout<<"1 - Cursos presenciais"<<std::endl;
-        std::cout<<"2 - Cursos EAD"<<std::endl;
-        std::cout<<"3 - Idiomas (Libras)"<<std::endl;
-        std::cout<<"0 - Sair do Sistema"<<std::endl;
-        std::cout<<"Selecione a modalidade do curso: "<<std::endl;
-
-}
+using namespace std;
 
 
 int main(){
- 
-     int modalidade = -1;
-     exibirModalidade();
-     modalidade;
-     std::string nomeCompleto, CPF, enderenco, EMAIL;
-     int anosNascimento;
-     int anosAtual = 2026;
+   
+     int opcao;
 
-     
+     do{
 
-     std::cout<<"Digite o nome completo do aluno: "<<std::endl;
-     std::getline(std::cin, nomeCompleto);
+     cout<<"=========================================="<<std::endl;
+     cout<<"Bem-Vindo a Senac NH"<<std::endl;
+     cout<<"1 - Cadastro do Aluno "<<std::endl;
+     cout<<"2 - Curso "<<std::endl;
+     cout<<"3 - Sair Sistema "<<std::endl;
+    
+     std::cin >> opcao;
 
-     std::cout<<"Digite o seu CPF: "<<std::endl;
-     std::cin>>CPF;
+     switch(opcao){
 
-     std::cout<<"Digite o seu Ano de Nascimento: "<<std::endl;
-     std::cin>>anosNascimento;
+        case 1:
+        std::cout<<"você escolheu Cadastro do aluno"<<std::endl;
+        return 0;                
 
-     std::cout<<"Digite o seu Enderenço: "<<std::endl;
-     std::getline(std::cin, enderenco);
+        case 2:
+        std::cout<<"você escolheu Curso"<<std::endl;
+        return 1;
 
-     std::cout<<"Digite o seu número telefone: "<<std::endl;
+        case 3:
+        std::cout<<"Obrigado,Volte sempre"<<std::endl;
+        return 2;
+
+        default:
+        std::cout<<"Número Inválido"<<std::endl;
+     } 
+     }while (true);
+         return 0;
+}
+
+//int Aluno(){
+        
+        //cout<<"=========================================="<<std::endl;
+        //cout<<"Menu Principal"<<std::endl;
+        
 
 
-     std::cout<<"Nome do Aluno: "<<nomeCompleto<<std::endl;
-     std::cout<<"CPF: "<<CPF<<std::endl;
-     std::cout<<"Idade: "<<anosAtual-anosNascimento<<std::endl;   
-     std::cout<<"Enderenço: "<<enderenco<<std::endl;
+
+
+
+
+
+//}
+
+        
+
+      
      
      
         
-         return 0;
-}
