@@ -1,58 +1,28 @@
 #include<iostream> 
-#include<string>
-#include<iomanip>
-using namespace std;
-
 
 int main(){
-   
-     int opcao;
 
-     do{
+        int num1, num2, soma, subt, mult;
+        float div;
 
-     cout<<"=========================================="<<std::endl;
-     cout<<"Bem-Vindo a Senac NH"<<std::endl;
-     cout<<"1 - Cadastro do Aluno "<<std::endl;
-     cout<<"2 - Curso "<<std::endl;
-     cout<<"3 - Sair Sistema "<<std::endl;
-    
-     std::cin >> opcao;
+        std::cout<<"Digite aqui o valor para número 1: "<<std::endl;
+        std::cin>>num1;
 
-     switch(opcao){
+        std::cout<<"Digite aqui o valor para número 2: "<<std::endl;
+        std::cin>>num2;
 
-        case 1:
-        std::cout<<"você escolheu Cadastro do aluno"<<std::endl;
-        return 0;                
+        soma = num1 + num2;
+        subt = num1 - num2;
+        mult = num1 * num2;
+        div = num1 / num2;
 
-        case 2:
-        std::cout<<"você escolheu Curso"<<std::endl;
-        return 1;
+        std::cout<<"O resultado da soma é: "<<soma<<std::endl;
+        std::cout<<"O resultado da subtração é: "<<subt<<std::endl;
+        std::cout<<"O resultado da multiplicação é: "<<mult<<std::endl;
+        std::cout<<"O resultado da divisão é: "<<div<<std::endl;
 
-        case 3:
-        std::cout<<"Obrigado,Volte sempre"<<std::endl;
-        return 2;
-
-        default:
-        std::cout<<"Número Inválido"<<std::endl;
-     } 
-     }while (true);
          return 0;
 }
-
-//int Aluno(){
-        
-        //cout<<"=========================================="<<std::endl;
-        //cout<<"Menu Principal"<<std::endl;
-        
-
-
-
-
-
-
-
-//}
-
         
 
       
