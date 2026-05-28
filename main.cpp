@@ -1,19 +1,31 @@
 #include<iostream> 
+#include<tuple>
+#include<string>
 
 int main(){
 
-        int numero,sorteado = 42;
-        
-        do{
-            std::cout<<"Advinhe: ";
-            std::cin>>numero;
-            if(numero < sorteado) std::cout<<"Maior!"<<std::endl;
-            else if(numero > sorteado) std::cout<<"Menor!"<<std::endl;
-        }while(numero != sorteado);
+    std::string nome;
+    int idade;
+    double altura;
 
-        std::cout<<"Acertou!!"<<std::endl;
+    std::cout<<"Digite o seu nome: "<<std::endl;
+    std::getline(std::cin, nome);
 
-        return 0;
+    std::cout<<"Digite a sua idade: "<<std::endl;
+    std::cin>>idade;
+
+    std::cout<<"Digite a sua altura: "<<std::endl;
+    std::cin>>altura;
+
+    std::tuple<std::string, int, double> pessoa = std::make_tuple(nome, idade, altura);
+
+    std::cout<<"\n ------ Dados salvos na Tupla -------"<<std::endl;
+
+    std::cout<<"Nome: "<<std::get<0>(pessoa)<<std::endl;
+    std::cout<<"Idade: "<<std::get<1>(pessoa)<<"anos."<<std::endl;
+    std::cout<<"Altura: "<<std::get<2>(pessoa)<<"m"<<std::endl;
+
+    return 0;
 
 }
 
