@@ -8,12 +8,20 @@ int contarDigitos(int n){
 
 int main(){
     
-    int numero = 2026;
+    int numeroUsuario;
 
-    std::cout<<"O número "<<numero<<" tem "<<contarDigitos(numero)<<" digitos.\n";
+    std::cout<<"Digite um número inteiro: "<<std::endl;
+    std::cin>>numeroUsuario;
 
+    if(numeroUsuario == 0){
+        std::cout<<"O número 0 tem 1 digito.\n";
+    }else{
+        std::cout<<"O número "<<numeroUsuario<<" tem "<<contarDigitos(numeroUsuario)<<" digitos.\n";
+    }
+    
     return 0;
 }
+
       
      
      
