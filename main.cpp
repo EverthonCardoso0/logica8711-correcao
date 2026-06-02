@@ -3,16 +3,11 @@
 
 int main(){
 
-    int num1 = 42;
-    int num2 = 35;
-    int idade = 24;
+    int numero = 42;
+    int* ptr = &numero;
 
-    std::cout<<"Número: "<<num1<<std::endl;
-    std::cout<<"Endereço: "<<&num1<<std::endl;
-    std::cout<<"Número: "<<num2<<std::endl;
-    std::cout<<"Endereço: "<<&num2<<std::endl;
-    std::cout<<"Número/Idade: "<<idade<<std::endl;
-    std::cout<<"Endereço: "<<&idade<<std::endl;
+    std::cout<<"Acessar via variável: "<<numero<<std::endl;
+    std::cout<<"Acessar via ponteiro: "<<*ptr<<std::endl;
            
     return 0;
 
