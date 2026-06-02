@@ -1,20 +1,42 @@
 #include<iostream>
+#include<string>
+#include<algorithm>
 
-int somarVetor(int vetor[], int indice){
-    if(indice == 0){
-        return vetor[0];
+bool ehPalindromo(std:: string s){
+    int inicio = 0;
+    int fim = s.length() - 1;
+
+    while(inicio < fim){
+        if(s[inicio] != s[fim]){
+            return false;
+        }
+        inicio++;
+        fim--;
     }
-
-    return vetor[indice] + somarVetor(vetor, indice - 1);
+    return true;
 }
 
 int main(){
-    int numero[5] = {10, 20, 30, 40, 50};
 
-    std::cout<<"Soma recursiva: "<<somarVetor(numero, 4)<<std::endl;
+    std::string palavra;
 
-return 0;
+    std::cout<<"Digite um palavra: "<<std::endl;
+    std::cin>>palavra;
 
+    for(int i = 0; i< palavra.length(); i++){
+        palavra[i] = std::tolower(palavra[i]);
+    }
+
+    if(ehPalindromo(palavra)){
+        std::cout<<"É Palindromo!"<<std::endl;
+    }else{
+        std::cout<<"Não é Palindromo!"<<std::endl;
+    }
+    return 0;
 }
+
+
+
+
      
      
