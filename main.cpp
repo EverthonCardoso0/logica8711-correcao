@@ -1,43 +1,39 @@
 #include<iostream>
 #include<string>
 
-struct Jogador{
-    std::string nome;
-    std::string time;
-    int gols;
-};
-
 int main(){
-    Jogador jogadores[5];
+    std::string time1, time2;
+    int gols1, gols2;
 
-    std::cout<<"==== COPA - RAKING DE GOLEADORES ===="<<std::endl;
+    std::cout<<"==== COMPRADOR DE PLACAR ===="<<std::endl;
     std::cout<<std::endl;
 
-    for(int i = 0; i < 5; i++){
-        std::cout<<"Jogador "<<(i + 1)<<":"<<std::endl;
-        std::cout<<"Nome: ";
-        std::cin>>jogadores[i].nome;
-        std::cout<<"Time: ";
-        std::cin>>jogadores[i].time;
-        std::cout<<"Gols: ";
-        std::cin>>jogadores[i].gols;
-        std::cout<<std::endl;
-    }
+    std::cout<<"Time 1: ";
+    std::cin>>time1;
+    std::cout<<"Gols time 1: ";
+    std::cin>>gols1;
 
-    std::cout<<"==== RANKING ===="<<std::endl;
+    std::cout<<"Time 2: ";
+    std::cin>>time2;
+    std::cout<<"Gols time 2: ";
+    std::cin>>gols2;
+
+    std::cout<<std::endl;
+    std::cout<<"==== RESULTADO ===="<<std::endl;
+    std::cout<<time1<<" "<<gols1<<" x "<<gols2<<" "<<time2<<std::endl;
     std::cout<<std::endl;
 
-    for(int i = 0; i < 5 - 1; i++){
-        for(int j = 0; j < 5 - 1; j++){
-            if(jogadores[i].gols < jogadores[j + 1].gols){
-                Jogador temp = jogadores[j];
-                jogadores[j] = jogadores[j + 1];
-                jogadores[j + 1] = temp;
-            }
-        }
+    if (gols1 > gols2){
+        std::cout<<"Vencedor: "<<time1<<std::endl;
+        std::cout<<"Perdedor: "<<time2<<std::endl;
     }
-    for(int i = 0; i < 5; i++){
-        std::cout<<(i + 1)<<"° - "<<jogadores[i].nome<<" ("<<jogadores[i].time<<") - "<<jogadores[i].gols<<" gols"<<std::endl;
+    else if (gols2 > gols1){
+        std::cout<<"Vencedor: "<<time2<<std::endl;
+        std::cout<<"Perdedor: "<<time1<<std::endl;
+    }else {
+        std::cout<<"Empate!"<<std::endl;
     }
+
     return 0;
 }
+    
