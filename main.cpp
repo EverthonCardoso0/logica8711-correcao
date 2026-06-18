@@ -1,26 +1,32 @@
 #include<iostream>
+#include<string>
 
-struct CampeonatoCopa{
-    int ano;
-    std::string campeao;
+struct Convocados{
+    std::string nome;
+    int numero;
+    std::string posicao;
 };
 
 int main(){
-    CampeonatoCopa copa[5] = {
-        {2022, "Argentina"},
-        {2018, "França"},
-        {2014, "Alemanha"},
-        {2010, "Espanha"},
-        {2006, "Itália"}
-    };
+    Convocados convocados[3];
 
-    std::cout<<"==== Campeões da Copa ===="<<std::endl;
+    std::cout<<"==== CONVOCAÇÃO DA SELEÇÃO ===="<<std::endl;
     std::cout<<std::endl;
 
-    for(int i = 0; i < 5; i++){
-        std::cout<<copa[i].ano<<" - Campeão: "<<copa[i].campeao<<std::endl;
-        
+    for(int i = 0; i < 3; i++){
+        std::cout<<"Jogador "<<(i + 1)<<": "<<std::endl;
+        std::cout<<"Nome: ";
+        std::cin>>convocados[i].nome;
+        std::cout<<"Numero: ";
+        std::cin>>convocados[i].numero;
+        std::cout<<"Posição: ";
+        std::cin>>convocados[i].posicao;    
+    }
+    std::cout<<"==== LISTA DE CONVOCADOS ===="<<std::endl;
+    std::cout<<std::endl;
+
+    for(int i = 0; i < 3; i++){
+        std::cout<<convocados[i].numero<<" - "<<convocados[i].nome<<" ("<<convocados[i].posicao<<")"<<std::endl;
     }
     return 0;
 }
-
