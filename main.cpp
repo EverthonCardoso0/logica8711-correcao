@@ -7,30 +7,29 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-   std::vector<int>numeros;
+   std::vector<int> numeros;
+   std::cout<<"Contar ocorrências: "<<std::endl;
 
-   std::cout<<"==== Maior e Menor ===="<<std::endl;
-
+   numeros.push_back(5);
    numeros.push_back(10);
-   numeros.push_back(20);
-   numeros.push_back(30);
-   numeros.push_back(40);
+   numeros.push_back(5);
+   numeros.push_back(5);
+   numeros.push_back(15);
+   numeros.push_back(5);
+   numeros.push_back(15);
 
-   std::cout<<"Vector: ";
-   for(int i = 0; i < numeros.size(); i++){
+std::cout<<"Vector: ";
+for(int i = 0; i < numeros.size(); i++){
     std::cout<<numeros[i]<<" ";
-   }
-   std::cout<<std::endl;
-   int soma = 0;
-  
-
-   for(int i = 0; i < numeros.size(); i++){
-    soma += numeros[i];
-   }
-   std::cout<<"Soma: "<<soma<<std::endl;
-
-    return 0;
 }
 
+int contador = 0;
+for(int i = 0; i < numeros.size(); i++){
+    if(numeros[i] == 5){
+        contador++;
+    }
+}
+std::cout<<"O número 5 aparece: "<<contador<<" vezes!"<<std::endl;
 
-
+return 0;
+}
