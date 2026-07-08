@@ -9,26 +9,26 @@ int main(){
 
     std::vector<int> numero;
 
-  numero.push_back(5);
-  numero.push_back(10);
-  numero.push_back(15);
-  numero.push_back(20);
-  numero.push_back(25);
+    std::cout<<"Inverter o vector: "<<std::endl;
 
-  std::cout<<"Vector: ";
+  numero.push_back(10);
+  numero.push_back(20);
+  numero.push_back(30);
+  numero.push_back(40);
+  numero.push_back(50);
+
+  std::cout<<"Original: ";
   for(int i = 0; i < numero.size(); i++){
     std::cout<<numero[i]<<" ";
   }
-    std::cout<<" É Par ou Impar: "<<std::endl;
+  std::cout<<std::endl;
+  std::cout<<"Invertido: ";
+  for(int i = numero.size() -1; i >= 0; i--){
+    std::cout<<numero[i]<<" ";
+  }
+  std::cout<<std::endl;
 
-    for(int i = 0; i < numero.size(); i++){
-        if(numero[i] % 2 == 0){
-            std::cout<<numero[i]<<" É Par!"<<std::endl;
-        }else{
-            std::cout<<numero[i]<<" É Impar!"<<std::endl;
-        }
-    }
-
+  
   
 return 0;
 }
