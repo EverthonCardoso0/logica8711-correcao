@@ -7,33 +7,28 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-   std::vector<int> numeros;
-   std::cout<<"Buscar elemento: "<<std::endl;
+    std::vector<int> numero;
 
-   numeros.push_back(100);
-   numeros.push_back(200);
-   numeros.push_back(300);
-   numeros.push_back(400);
+  numero.push_back(5);
+  numero.push_back(10);
+  numero.push_back(15);
+  numero.push_back(20);
+  numero.push_back(25);
 
-std::cout<<"Vector: ";
-for(int i = 0; i < numeros.size(); i++){
-    std::cout<<numeros[i]<<" ";
-}
+  std::cout<<"Vector: ";
+  for(int i = 0; i < numero.size(); i++){
+    std::cout<<numero[i]<<" ";
+  }
+    std::cout<<" É Par ou Impar: "<<std::endl;
 
-int buscado = 300;
-int posicao = -1;
-
-for(int i = 0; i < numeros.size(); i++){
-    if(numeros[i] == buscado){
-        posicao = i;
-        break;
+    for(int i = 0; i < numero.size(); i++){
+        if(numero[i] % 2 == 0){
+            std::cout<<numero[i]<<" É Par!"<<std::endl;
+        }else{
+            std::cout<<numero[i]<<" É Impar!"<<std::endl;
+        }
     }
-}
-if(posicao != -1){
-    std::cout<<"Número "<<buscado<<" encontrado na posição "<<posicao<<std::endl;
-}else{
-    std::cout<<"Número não encontrado!"<<std::endl;
-}
 
+  
 return 0;
 }
