@@ -1,34 +1,32 @@
 #include<iostream>
 #include<Windows.h>
-#include<vector>
+#include<cmath>
+
+int calcularCubo(int num){
+  return static_cast<int>(std::pow(num, 3));
+}
+  
+
 
 int main(){
     
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-    std::vector<int> numero;
+int num;
 
-    std::cout<<"Inverter o vector: "<<std::endl;
+std::cout<<"Digite um número inteiro: ";
+std::cin>>num;
 
-  numero.push_back(10);
-  numero.push_back(20);
-  numero.push_back(30);
-  numero.push_back(40);
-  numero.push_back(50);
+int cubo = calcularCubo(num);
+std::cout<<"O resultado é: "<<cubo<<"."<<std::endl;
 
-  std::cout<<"Original: ";
-  for(int i = 0; i < numero.size(); i++){
-    std::cout<<numero[i]<<" ";
-  }
-  std::cout<<std::endl;
-  std::cout<<"Invertido: ";
-  for(int i = numero.size() -1; i >= 0; i--){
-    std::cout<<numero[i]<<" ";
-  }
-  std::cout<<std::endl;
-
-  
   
 return 0;
+    
 }
+
+
+  
+  
+
