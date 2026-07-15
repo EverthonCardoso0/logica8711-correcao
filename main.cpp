@@ -1,32 +1,19 @@
-#include<iostream>
+
 #include<Windows.h>
-#include<cmath>
+#include <iostream>
 
-int calcularCubo(int num){
-  return static_cast<int>(std::pow(num, 3));
-}
-  
-
+using namespace std;
 
 int main(){
-    
-    SetConsoleOutputCP(CP_UTF8);
+
+  SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-int num;
 
-std::cout<<"Digite um número inteiro: ";
-std::cin>>num;
-
-int cubo = calcularCubo(num);
-std::cout<<"O resultado é: "<<cubo<<"."<<std::endl;
-
-  
-return 0;
+    for(int i = 1; i <= 20; i+=2){
+        std::cout<<i<<" "<<std::endl;
+      }
     
+    
+    return 0;
 }
-
-
-  
-  
-
