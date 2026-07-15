@@ -1,19 +1,22 @@
+#include<Windows.h> 
 
-#include<Windows.h>
-#include <iostream>
+#include <iostream> 
 
-using namespace std;
+ 
 
-int main(){
+using namespace std; 
 
-  SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
+ 
+int main(){ 
+
+    SetConsoleOutputCP(CP_UTF8); 
+    SetConsoleCP(CP_UTF8); 
+    const float PI = 3.14; 
+    float raio, area; 
+ 
+    std::cout <<"Digite o raio do circulo: "<<std::endl; 
+    std::cin>>raio; 
+    area = PI * (raio * raio); 
 
 
-    for(int i = 1; i <= 20; i+=2){
-        std::cout<<i<<" "<<std::endl;
-      }
-    
-    
-    return 0;
-}
+ 
